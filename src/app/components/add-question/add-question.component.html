@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="header">
+    Dodaj novo vprašanje
+  </div>
+  <div class="card-block">
+    <form (submit)="addQuestion()">
+      <div class="form-group">
+        <label for="text">Question Text</label>
+        <input type="text" class="form-control" [(ngModel)]="text" name="text">
+      </div>
+    </form>
+    <form (submit)="addQuestion()">
+        <div class="form-group">
+          <label for="text">Question Answer</label>
+          <input type="text" class="form-control" [(ngModel)]="answer" name="answer">
+        </div>
+        <input type="submit" class="btn btn-primary" value="submit">
+      </form>
+  </div>
+</div>
